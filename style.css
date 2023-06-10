@@ -45,3 +45,15 @@ header {
     margin-top: 10px;
     box-shadow: 2px 2px 5px black;
 }
+
+    #text-for, #text-des, #text-con, #text-int, #text-sab, #text-car {
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px red;
+    box-shadow: 2px 2px 5px black;   
+}

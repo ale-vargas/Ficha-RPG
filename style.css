@@ -1,0 +1,47 @@
+footer {
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+header {
+    text-align: center;
+}
+
+.atributo {
+    width: 450px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+}
+
+.modificador{
+    border: solid 1px red;
+    width: 60px;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    font: normal 10pt arial;
+    box-shadow: 2px 2px 5px black;
+}
+
+.valor-mod {
+    font: normal 20pt arial;
+    margin-top: 15px;
+}
+
+.valor-atr {
+    border: solid 1px red;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px black;
+}

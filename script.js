@@ -1,65 +1,65 @@
 // FORÇA
-var modfor = document.querySelector('div#mod-for')
-modfor.innerHTML = '0';
-var tfor = document.querySelector('input#text-for')
-var resfor  = 0;
-tfor.addEventListener('input',function() {
-    var nfor = parseInt(tfor.value)
-    var resfor = Math.floor((nfor - 10) / 2)
-    modfor.innerHTML = `${resfor}`  
+var modFOR = document.querySelector('div#mod-for')
+modFOR.innerHTML = '0';
+var txtFOR = document.querySelector('input#text-for')
+var resFOR  = 0;
+txtFOR.addEventListener('input',function() {
+    var numFOR = parseInt(txtFOR.value)
+    var resFOR = Math.floor((numFOR - 10) / 2)
+    modFOR.innerHTML = `${resFOR}`  
 })
 
 // DESTREZA
-var moddes = document.querySelector('div#mod-des')
-moddes.innerHTML = '0';
-var tdes = document.querySelector('input#text-des')
-var resdes = 0;
-tdes.addEventListener('input',function() {
-    var ndes = parseInt(tdes.value)
-    var resdes = Math.floor((ndes - 10) / 2)
-    moddes.innerHTML = `${resdes}`  
+var modDES = document.querySelector('div#mod-des')
+modDES.innerHTML = '0';
+var txtDES = document.querySelector('input#text-des')
+var resDES = 0;
+txtDES.addEventListener('input',function() {
+    var numDES = parseInt(txtDES.value)
+    var resDES = Math.floor((numDES - 10) / 2)
+    modDES.innerHTML = `${resDES}`  
 })
 
 // CONSTITUIÇÃO
-var modcon = document.querySelector('div#mod-con')
-modcon.innerHTML = '0';
-var tcon = document.querySelector('input#text-con')
-var rescon = 0;
-tcon.addEventListener('input',function() {
-    var ncon = parseInt(tcon.value)
-    var rescon = Math.floor((ncon - 10) / 2)
-    modcon.innerHTML = `${rescon}`  
+var modCON = document.querySelector('div#mod-con')
+modCON.innerHTML = '0';
+var txtCON = document.querySelector('input#text-con')
+var resCON = 0;
+txtCON.addEventListener('input',function() {
+    var numCON = parseInt(txtCON.value)
+    var resCON = Math.floor((numCON - 10) / 2)
+    modCON.innerHTML = `${resCON}`  
 })
 
 // INTELIGÊNCIA
-var modint = document.querySelector('div#mod-int')
-modint.innerHTML = '0';
-var tint = document.querySelector('input#text-int')
-var resint = 0;
-tint.addEventListener('input',function() {
-    var nint = parseInt(tint.value)
-    var resint = Math.floor((nint - 10) / 2)
-    modint.innerHTML = `${resint}`  
+var modINT = document.querySelector('div#mod-int')
+modINT.innerHTML = '0';
+var txtINT = document.querySelector('input#text-int')
+var resINT = 0;
+txtINT.addEventListener('input',function() {
+    var numINT = parseInt(txtINT.value)
+    var resINT = Math.floor((numINT - 10) / 2)
+    modINT.innerHTML = `${resINT}`  
 })
 
 // SABEDORIA
-var modsab = document.querySelector('div#mod-sab')
-modsab.innerHTML = '0';
-var tsab = document.querySelector('input#text-sab')
-var ressab = 0;
-tsab.addEventListener('input',function() {
-    var nsab = parseInt(tsab.value)
-    var ressab = Math.floor((nsab - 10) / 2)
-    modsab.innerHTML = `${ressab}`  
+var modSAB = document.querySelector('div#mod-sab')
+modSAB.innerHTML = '0';
+var txtSAB = document.querySelector('input#text-sab')
+var resSAB = 0;
+txtSAB.addEventListener('input',function() {
+    var numSAB = parseInt(txtSAB.value)
+    var resSAB = Math.floor((numSAB - 10) / 2)
+    modSAB.innerHTML = `${resSAB}`  
 })
 
 // CARISMA
-var modcar = document.querySelector('div#mod-car')
-modcar.innerHTML = '0';
-var tcar = document.querySelector('input#text-car')
-var rescar = 0;
-tcar.addEventListener('input',function() {
-    var ncar = parseInt(tcar.value)
-    var rescar = Math.floor((ncar - 10) / 2)
-    modcar.innerHTML = `${rescar}`  
+var modCAR = document.querySelector('div#mod-car')
+modCAR.innerHTML = '0';
+var txtCAR = document.querySelector('input#text-car')
+var resCAR = 0;
+txtCAR.addEventListener('input',function() {
+    var numCAR = parseInt(txtCAR.value)
+    var resCAR = Math.floor((numCAR - 10) / 2)
+    modCAR.innerHTML = `${resCAR}`  
 })

@@ -43,7 +43,7 @@ header {
     margin-top: 10px;
 }
 
-    #text-for, #text-des, #text-con, #text-int, #text-sab, #text-car {
+.inputAtr {
     width: 30px;
     height: 20px;
     border-radius: 50%;

@@ -71,8 +71,9 @@ header {
 }
 
 .input-nome {
-    width: 440px;
+    width: 460px;
     border-color: transparent;
+    font: bold 13px arial;
 }
 
 .caracteristica {
@@ -101,4 +102,5 @@ header {
 .select-criatura {
     width: 130px;
     font: bold 13px arial;
+    border: solid 1px white ;
 }

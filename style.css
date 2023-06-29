@@ -1,7 +1,7 @@
 footer {
     text-align: center;
     font-style: italic;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .modificador{
@@ -53,4 +53,52 @@ header {
     text-align: center;
     border: solid 1px red;
     box-shadow: 2px 2px 5px black;   
+}
+
+.nome-personagem {
+    border: solid 1px red;
+    box-shadow: 2px 2px 5px black;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.nome-personagem legend {
+    background-color: white;
+    padding: 0 5px;
+    font: bold 13px arial;
+}
+
+.input-nome {
+    width: 440px;
+    border-color: transparent;
+}
+
+.caracteristica {
+    margin: 0 auto;
+    width: 500px;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.caract-criatura {
+    border: solid 1px red;
+    box-shadow: 2px 2px 5px black;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 70px;
+}
+
+.caract-criatura legend {
+    background-color: white;
+    padding: 0 5px;
+    font: bold 13px arial;
+}
+
+.select-criatura {
+    width: 130px;
+    font: bold 13px arial;
 }

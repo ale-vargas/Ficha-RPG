@@ -162,3 +162,12 @@ header {
     box-shadow: 2px 2px 5px black;
     height: 45px;
 }
+
+.ponto-vida {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+    margin-left: 15px;
+}

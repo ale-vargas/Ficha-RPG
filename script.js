@@ -42,3 +42,34 @@ function identificarInput(txtSelector, atributo) {
   
   // CARISMA
   identificarInput('input#text-car', 'car')
+
+  function calcularVida (){
+    var nivelInput = document.getElementById('nivel-personagem')
+    var selectTipo = document.getElementById('tipo-criatura')
+    var resultadoPV = document.querySelector('.ponto-vida')
+
+    var tipoCriatura = selectTipo.value
+    var nivel = parseInt(nivelInput.value)
+
+    if (tipoCriatura === 'animal'){
+      var valorVida = (4 + valorCON) * nivel
+    } else if (tipoCriatura === 'constructo'){
+      var valorVida = (5 + valorCON) * nivel
+    } else if (tipoCriatura === 'espirito'){
+      var valorVida = (4 + valorCON) * nivel
+    } else if (tipoCriatura === 'humanoide'){
+      var valorVida = (2 + valorCON) * nivel
+    } else if (tipoCriatura === 'monstro'){
+      var valorVida = (10 + valorCON) * nivel
+    } else if (tipoCriatura === 'mortovivo'){
+      var valorVida = (4 + valorCON) * nivel
+    }
+
+    resultadoPV.innerHTML = `${valorVida}`
+  }
+
+  var selectTipo = document.getElementById('tipo-criatura')
+  var nivelInput = document.getElementById('nivel-personagem')
+
+  selectTipo.addEventListener('change', calcularVida)
+  nivelInput.addEventListener('input', calcularVida)

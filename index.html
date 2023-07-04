@@ -18,50 +18,6 @@
         <input type="text" id="nome-personagem" class="input-nome">
     </fieldset>
     
-    <div class="caracteristica">
-        <fieldset class="caract-criatura">
-            <legend>Tipo:</legend>
-            <select name="tipo-criatura" id="tipo-criatura" class="select-criatura">
-                <option value=""></option>
-                <option value="animal">Animal</option>
-                <option value="constructo">Constructo</option>
-                <option value="espirito">Espírito</option>
-                <option value="humanoide">Humanoide</option>
-                <option value="monstro">Monstro</option>
-                <option value="mortovivo">Morto-Vivo</option>
-            </select>
-        </fieldset>
-        <fieldset class="caract-criatura">
-            <legend>Tamanho:</legend>
-            <select name="tamanho-criatura" id="tamanho-criatura" class="select-criatura">
-            <option value=""></option>
-            <option value="pequeno">Pequeno</option>
-            <option value="medio">Médio</option>
-            <option value="grande">Grande</option>
-            <option value="enorme">Enorme</option>
-            <option value="colossal">Colossal</option>
-            </select>
-        </fieldset>
-        <fieldset class="caract-criatura">
-            <legend>Nivel:</legend>
-            <input type="number" id="nivel-personagem" class="input-nivel">
-        </fieldset>
-    </div>
-
-    <div class="countPVePM">
-        <fieldset class="contador">
-            <legend>Vida:</legend>
-            <div class="divisor"></div>
-        </fieldset>
-        <fieldset class="contador">
-            <legend>Mana:</legend>
-            <div class="divisor"></div>
-        </fieldset>
-        <fieldset class="deslocamento">
-            <legend>Desloc.:</legend>
-        </fieldset>
-    </div>
-
     <div class="atributo">
         <div class="modificador"><strong>FOR</strong>
             <div class="valor-mod" id="mod-for">0</div>
@@ -100,7 +56,52 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="caracteristica">
+        <fieldset class="caract-criatura">
+            <legend>Tipo:</legend>
+            <select name="tipo-criatura" id="tipo-criatura" class="select-criatura">
+                <option value=""></option>
+                <option value="animal">Animal</option>
+                <option value="constructo">Constructo</option>
+                <option value="espirito">Espírito</option>
+                <option value="humanoide">Humanoide</option>
+                <option value="monstro">Monstro</option>
+                <option value="mortovivo">Morto-Vivo</option>
+            </select>
+        </fieldset>
+        <fieldset class="caract-criatura">
+            <legend>Tamanho:</legend>
+            <select name="tamanho-criatura" id="tamanho-criatura" class="select-criatura">
+            <option value=""></option>
+            <option value="pequeno">Pequeno</option>
+            <option value="medio">Médio</option>
+            <option value="grande">Grande</option>
+            <option value="enorme">Enorme</option>
+            <option value="colossal">Colossal</option>
+            </select>
+        </fieldset>
+        <fieldset class="caract-criatura">
+            <legend>Nivel:</legend>
+            <input type="number" id="nivel-personagem" class="input-nivel">
+        </fieldset>
+    </div>
+
+    <div class="countPVePM">
+        <fieldset class="contador">
+            <legend>Vida:</legend>
+            <div class="ponto-vida"></div>
+            <div class="divisor"></div>
+        </fieldset>
+        <fieldset class="contador">
+            <legend>Mana:</legend>
+            <div class="divisor"></div>
+        </fieldset>
+        <fieldset class="deslocamento">
+            <legend>Desloc.:</legend>
+        </fieldset>
+    </div>
+
     <footer><p>&copy; Ale-Vargas</p></footer>
     <script src="script.js"></script>
 </body>

@@ -73,7 +73,7 @@ header {
 .input-nome {
     width: 460px;
     border-color: transparent;
-    font: bold 13px arial;
+    font: bold 16px arial;
 }
 
 .caracteristica {
@@ -133,11 +133,24 @@ header {
 }
 
 .deslocamento {
+    display: flex;
     border: solid 1px red;
     border-radius: 10px;
     height: 50px;
     width: 70px;
     box-shadow: 2px 2px 5px black;
+}
+
+.input-desloc{
+    width: 30px;
+    height: 30px;
+    border-color: transparent;
+    font: bold 25px arial;
+    
+}
+
+.metros {
+    font: bold 13px arial;
 }
 
 .contador legend {
@@ -170,4 +183,13 @@ header {
     text-align: center;
     color: black;
     margin-left: 15px;
+}
+
+.ponto-mana {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+    margin-left: 2px;
 }

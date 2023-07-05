@@ -70,6 +70,8 @@ function identificarInput(txtSelector, atributo) {
 
   var selectTipo = document.getElementById('tipo-criatura')
   var nivelInput = document.getElementById('nivel-personagem')
+  var CONinput = document.getElementById('text-con')
 
   selectTipo.addEventListener('change', calcularVida)
   nivelInput.addEventListener('input', calcularVida)
+  CONinput.addEventListener('input', calcularVida)

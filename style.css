@@ -193,3 +193,23 @@ header {
     color: black;
     margin-left: 2px;
 }
+
+.icone-ataque {
+    width: 30px;
+}
+
+
+.ataques {
+    border: solid 1px red;
+    box-shadow: 2px 2px 5px black;
+    width: 470px;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.ataques legend {
+    background-color: white;
+    padding: 0 5px;
+    font: bold 13px arial;
+}

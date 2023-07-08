@@ -110,9 +110,13 @@
     <div class="box-ataques">
         <fieldset class="ataques">
             <legend>Ataques:</legend>
-            <img src="Imagens/espada.png" alt="Espada" class="icone-ataque">
-            <img src="Imagens/arco.png" alt="Arco" class="icone-ataque">
-            <img src="Imagens/cajado.png" alt="Cajado" class="icone-ataque">
+            <select name="tipo-ataque" id="tipo-ataque" class="tipo-ataque">
+                <option value="corpo">Corpo-a-Corpo</option>
+                <option value="distancia">à Distancia</option>
+                <option value="magia">Mágico</option>
+            </select>
+            <img id="iconeAtaque" src="Imagens/espada.png" alt="Espada" class="icone-ataque">
+            <input type="text" id="nome-ataque" class="nome-ataque">
         </fieldset>
     </div>
 

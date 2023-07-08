@@ -195,11 +195,13 @@ header {
 }
 
 .icone-ataque {
-    width: 30px;
+    width: 20px;
+    margin-left: 5px;
 }
 
 
 .ataques {
+    display: flex;
     border: solid 1px red;
     box-shadow: 2px 2px 5px black;
     width: 470px;
@@ -212,4 +214,19 @@ header {
     background-color: white;
     padding: 0 5px;
     font: bold 13px arial;
+}
+
+.tipo-ataque {
+    width: 120px;
+    font: bold 13px arial;
+    border: solid 1px white ;
+}
+
+.nome-ataque {
+    margin-left: 5px;
+    border: transparent;
+    border-bottom: solid 1px red;
+    font: bold 13px arial;
+    width: 110px;
+    text-align: center;
 }

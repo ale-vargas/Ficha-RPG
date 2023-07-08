@@ -43,14 +43,15 @@ function identificarInput(txtSelector, atributo) {
   // CARISMA
   identificarInput('input#text-car', 'car')
 
-  function calcularPVePM (){
-    var nivelInput = document.getElementById('nivel-personagem')
-    var selectTipo = document.getElementById('tipo-criatura')
-    var resultadoPV = document.querySelector('.ponto-vida')
-    var resultadoPM = document.querySelector('.ponto-mana')
+// Calcular PV e PM por nivel de acordo com tipo de criatura
+function calcularPVePM (){
+  var nivelInput = document.getElementById('nivel-personagem')
+  var selectTipo = document.getElementById('tipo-criatura')
+  var resultadoPV = document.querySelector('.ponto-vida')
+  var resultadoPM = document.querySelector('.ponto-mana')
 
-    var tipoCriatura = selectTipo.value
-    var nivel = parseInt(nivelInput.value)
+  var tipoCriatura = selectTipo.value
+  var nivel = parseInt(nivelInput.value)
 
     if (tipoCriatura === 'animal'){
       var valorVida = (4 + valorCON) * nivel
@@ -72,8 +73,8 @@ function identificarInput(txtSelector, atributo) {
       var valorMana = 1 * nivel
     }
 
-    resultadoPV.innerHTML = `${valorVida}`
-    resultadoPM.innerHTML = `${valorMana}`
+  resultadoPV.innerHTML = `${valorVida}`
+  resultadoPM.innerHTML = `${valorMana}`
   }
 
   var selectTipo = document.getElementById('tipo-criatura')
@@ -83,3 +84,20 @@ function identificarInput(txtSelector, atributo) {
   selectTipo.addEventListener('change', calcularPVePM)
   nivelInput.addEventListener('input', calcularPVePM)
   CONinput.addEventListener('input', calcularPVePM)
+
+// Alterar icone do tipo de ataque
+var selectAtaque = document.getElementById('tipo-ataque')
+var img = document.getElementById('iconeAtaque')
+function alterarIcone(){
+  var tipoAtaque =  selectAtaque.value
+
+  if (tipoAtaque === 'corpo') {
+    img.src = 'Imagens/espada.png'
+  } else if (tipoAtaque === 'distancia') {
+    img.src = 'Imagens/arco.png'
+  } else if (tipoAtaque === 'magia') {
+    img.src = 'Imagens/cajado.png'
+  }
+}
+
+selectAtaque.addEventListener('change', alterarIcone)

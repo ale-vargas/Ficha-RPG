@@ -117,8 +117,31 @@
                 <option value="magia">Mágico</option>
             </select>
             <input type="text" id="nome-ataque" class="nome-ataque">
+            <input type="text" id="num-dano" class="num-dano" value=1> 
+            <span class="barra"></span>
+            <select name="dado-dano" id="dado-dano" class="tipo-dado">
+                <option value="d6">d6</option>
+                <option value="d4">d4</option>
+                <option value="d8">d8</option>
+                <option value="d10">d10</option>
+                <option value="d12">d12</option>
+            </select>
+            <input type="text" id="ext-dano" class="num-dano"> 
+            <span class="barra"></span>
+            <select name="ext-dano" id="ext-dano" class="tipo-dado">
+                <option value=""></option>
+                <option value="d4">d4</option>
+                <option value="d6">d6</option>
+                <option value="d8">d8</option>
+                <option value="d10">d10</option>
+                <option value="d12">d12</option>
+            </select>
+            <input type="text" id="valor-crit" class="critico" value="20"> 
+            <span class="barra"> / </span>
+            <input type="text" id="multip-crit" class="mult-critico" value="2">
+            <span class="barra">x</span>
         </fieldset>
-    </div>
+        </div>
 
     <footer><p>&copy; Ale-Vargas</p></footer>
     <script src="script.js"></script>

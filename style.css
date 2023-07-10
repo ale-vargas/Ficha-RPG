@@ -227,6 +227,44 @@ header {
     border: transparent;
     border-bottom: solid 1px red;
     font: bold 13px arial;
-    width: 150px;
+    width: 170px;
+    text-align: center;
+}
+
+.num-dano {
+    width: 15px;
+    margin-left: 20px;
+    border: transparent;
+    font: bold 13px arial;
+    border-bottom: solid 1px red;
+    text-align: center;
+}
+
+
+.barra {
+    font: bold 13px arial;
+    border-bottom: solid 1px red;
+}
+
+.tipo-dado { 
+    border: solid 1px white;
+    font: bold 13px arial;
+    border-bottom: solid 1px red;
+}
+
+.critico { 
+    width: 15px;
+    margin-left: 20px;
+    border: transparent;
+    border-bottom: solid 1px red;
+    font: bold 13px arial;
+    text-align: center;
+}
+
+.mult-critico { 
+    width: 10px;
+    border: transparent;
+    border-bottom: solid 1px red;
+    font: bold 13px arial;
     text-align: center;
 }

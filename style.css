@@ -217,7 +217,7 @@ header {
 }
 
 .tipo-ataque {
-    width: 120px;
+    width: 20px;
     font: bold 13px arial;
     border: solid 1px white ;
 }
@@ -227,6 +227,6 @@ header {
     border: transparent;
     border-bottom: solid 1px red;
     font: bold 13px arial;
-    width: 110px;
+    width: 150px;
     text-align: center;
 }

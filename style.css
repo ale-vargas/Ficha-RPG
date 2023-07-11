@@ -285,15 +285,22 @@ header {
     line-height: 20px;
 }
 
-.adicionar{
-    display: flex;
-    border: solid 1px red;
-    box-shadow: 2px 2px 5px black;
-    border-radius: 100px;
-    margin: auto;
-    margin-top: -8px;
-}
-
 .menor-espacamento {
     margin-top: 5px;
   }
+
+.addRemove {
+    width: 25px;
+    border: solid 1px red;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 100px;
+    font: bold 13px arial;
+    margin: 0 5px;
+}
+
+.add-remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
+}

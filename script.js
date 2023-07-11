@@ -140,3 +140,14 @@ function calcularPVePM (){
   selectAtaqueOriginal.addEventListener('change', function() {
     alterarIcone(selectAtaqueOriginal, imgOriginal)
   });
+
+// Remover linha de ataque
+var botaoRemover = document.getElementById('remover')
+botaoRemover.addEventListener('click', function() {
+  var fieldsets = document.querySelectorAll('.ataques')
+  var ultimoFieldset = fieldsets[fieldsets.length - 1]
+
+  if (fieldsets.length > 1) {
+    ultimoFieldset.remove()
+  }
+});

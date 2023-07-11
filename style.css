@@ -202,6 +202,7 @@ header {
 
 .ataques {
     display: flex;
+    flex-wrap: wrap;
     border: solid 1px red;
     box-shadow: 2px 2px 5px black;
     width: 470px;
@@ -227,13 +228,13 @@ header {
     border: transparent;
     border-bottom: solid 1px red;
     font: bold 13px arial;
-    width: 170px;
+    width: 155px;
     text-align: center;
 }
 
 .num-dano {
     width: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
     border: transparent;
     font: bold 13px arial;
     border-bottom: solid 1px red;
@@ -242,8 +243,9 @@ header {
 
 
 .barra {
-    font: bold 13px arial;
+    font: bold 15px arial;
     border-bottom: solid 1px red;
+    line-height: 20px;
 }
 
 .tipo-dado { 
@@ -254,7 +256,7 @@ header {
 
 .critico { 
     width: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
     border: transparent;
     border-bottom: solid 1px red;
     font: bold 13px arial;
@@ -268,3 +270,30 @@ header {
     font: bold 13px arial;
     text-align: center;
 }
+
+.cd-teste { 
+    border: solid 1px white;
+    font: bold 13px arial;
+    border-bottom: solid 1px red;
+    width: 15px;
+}
+
+.span-cd {
+    font: bold 12px arial;
+    border-bottom: solid 1px red;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.adicionar{
+    display: flex;
+    border: solid 1px red;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: -8px;
+}
+
+.menor-espacamento {
+    margin-top: 5px;
+  }

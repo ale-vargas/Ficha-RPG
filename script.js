@@ -85,19 +85,58 @@ function calcularPVePM (){
   nivelInput.addEventListener('input', calcularPVePM)
   CONinput.addEventListener('input', calcularPVePM)
 
-// Alterar icone do tipo de ataque
-var selectAtaque = document.getElementById('tipo-ataque')
-var img = document.getElementById('iconeAtaque')
-function alterarIcone(){
-  var tipoAtaque =  selectAtaque.value
 
-  if (tipoAtaque === 'corpo') {
-    img.src = 'Imagens/espada.png'
-  } else if (tipoAtaque === 'distancia') {
-    img.src = 'Imagens/arco.png'
-  } else if (tipoAtaque === 'magia') {
-    img.src = 'Imagens/cajado.png'
+  // Adicionar novo ataque
+  var botaoAdicionar = document.getElementById('adicionar')
+  botaoAdicionar.addEventListener('click', function() {
+    var fieldsetOriginal = document.querySelector('.ataques')
+    var novoFieldset = fieldsetOriginal.cloneNode(true)
+  
+    // Gerar um número único para os IDs dos elementos no novo fieldset
+    var numeroUnico = Date.now()
+
+    // Alterar os IDs dos elementos no novo fieldset
+    novoFieldset.id = 'ataques-' + numeroUnico
+    novoFieldset.querySelector('#iconeAtaque').id = 'iconeAtaque-' + numeroUnico
+    novoFieldset.querySelector('#tipo-ataque').id = 'tipo-ataque-' + numeroUnico
+    novoFieldset.querySelector('#nome-ataque').id = 'nome-ataque-' + numeroUnico
+    novoFieldset.querySelector('#num-dano').id = 'num-dano-' + numeroUnico
+    // Continue alterando os outros IDs conforme necessário
+  
+    // Limpa os valores dos campos de entrada do novo fieldset
+    var inputs = novoFieldset.querySelectorAll('input')
+    inputs.forEach(function(input) {
+      input.value = ''
+    })
+    
+    novoFieldset.classList.add('menor-espacamento')
+
+    // Adiciona o novo fieldset abaixo do fieldset original
+    fieldsetOriginal.insertAdjacentElement('afterend', novoFieldset)
+  
+    // Chama a função de alteração de ícone para o novo fieldset
+    var novoSelectAtaque = novoFieldset.querySelector('#tipo-ataque-' + numeroUnico)
+    var novoImg = novoFieldset.querySelector('#iconeAtaque-' + numeroUnico)
+    novoSelectAtaque.addEventListener('change', function() {
+      alterarIcone(novoSelectAtaque, novoImg)
+    });
+  });
+  
+  function alterarIcone(selectAtaque, img) {
+    var tipoAtaque = selectAtaque.value
+  
+    if (tipoAtaque === 'corpo') {
+      img.src = 'Imagens/espada.png'
+    } else if (tipoAtaque === 'distancia') {
+      img.src = 'Imagens/arco.png'
+    } else if (tipoAtaque === 'magia') {
+      img.src = 'Imagens/cajado.png'
+    }
   }
-}
-
-selectAtaque.addEventListener('change', alterarIcone)
+  
+  // Chama a função de alteração de ícone para o fieldset original
+  var selectAtaqueOriginal = document.getElementById('tipo-ataque')
+  var imgOriginal = document.getElementById('iconeAtaque')
+  selectAtaqueOriginal.addEventListener('change', function() {
+    alterarIcone(selectAtaqueOriginal, imgOriginal)
+  });

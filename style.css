@@ -304,3 +304,25 @@ header {
     align-items: center;
     margin-top: -8px;
 }
+
+.legend-ataque {
+    display: flex;
+    font: bold 10px arial;
+    margin: 0 5px;
+}
+
+#legenda-nome {
+    margin-left: 110px;
+}
+#legenda-dano {
+    margin-left: 85px;
+}
+#legenda-extra {
+    margin-left: 32px;
+}
+#legenda-crit {
+    margin-left: 18px;
+}
+#legenda-teste{
+    margin-left: 20px;
+}
